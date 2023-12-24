@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - WP Pusher</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="top-nav">
+        <div class="logo"><img src="assets/img/wppusher_logo.png" alt="WP Pusher"></div>
+        <nav class="nav-menu">
+            <a href="#" class="nav-link">Download</a>
+            <a href="#" class="nav-link">Learn more</a>
+            <a href="#" class="nav-link">Pricing</a>
+            <a href="#" class="nav-link">Help</a>
+            <a href="#" class="nav-link nav-account">Account</a>
+        </nav>
+    </header>
+    <main class="card-container" role="main">
+        <section class="form-container" aria-labelledby="checkout-heading">
+            <header>
+                <h1 id="checkout-heading">Checkout</h1>
+            </header>
+            <form>
+                <!-- Basic Information Section -->
+                <article class="section" aria-labelledby="basic-info-heading">
+                    <header class="section-header" id="basic-info-heading">
+                        <div class="circle">1</div>
+                        <h2>Your Basic Information</h2>
+                    </header>
+                    <div class="form-row">
+                        <div class="input-container half">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first_name" placeholder="Jane" required aria-required="true">
+                        </div>
+                        <div class="input-container half">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last_name" placeholder="Doe" required aria-required="true">
+                        </div>
+                    </div>
+                    <div class="input-container full">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="janedoe@example.com" required aria-required="true">
+                    </div>
+                </article>
+
+                <!-- Payment Information Section -->
+                <article class="section" aria-labelledby="payment-info-heading">
+                    <header class="section-header" id="payment-info-heading">
+                        <div class="circle">2</div>
+                        <h2>Your Payment Information</h2>
+                    </header>
+                    <div class="input-container full">
+                        <label for="card-details">Credit Card</label>
+                        <input type="text" id="card-details" name="card_details" placeholder="Card Number      MM / YY      CVC" 
+                               required aria-required="true" pattern="\d{4} \d{4} \d{4} \d{4}  \d{2} / \d{2}  \d{3}" 
+                               aria-invalid="false" inputmode="numeric">
+                    </div>
+                </article>
+
+                <footer class="button-container">
+                    <button type="submit" aria-label="Complete Purchase">Buy WP Pusher</button>
+                </footer>
+            </form>
+            <aside class="support-info">
+                <span class="question-mark"><img src="assets/img/q.svg" alt="Help"></span>
+                <p>Need any help? Don’t hesitate to <a href="#support" aria-label="Contact Support">contact support</a>!</p>
+            </aside>
+            <footer class="stripe-info">
+                <img src="assets/img/stripe.svg" alt="Stripe logo">
+            </footer>
+        </section>
+        
+        <aside class="pricing-section" aria-labelledby="pricing-plan-heading">
+            <header>
+                <h2 id="pricing-plan-heading">Freelancer</h2>
+            </header>
+            <p class="price">$99/year</p>
+            <p class="renewal-notice">Automatically renews after 1 year</p>
+            <ul class="benefits">
+                <li>Use on 5 client sites</li>
+                <li>Private repositories</li>
+                <li>Email support</li>
+            </ul>
+             Need 20 client sites? 
+            <a href="#agency-plan" class="agency-plan">Switch to the Agency plan.</a>
+            <blockquote class="testimonial">
+                <p>"FTP is horrible to deal with. WP Pusher solves that issue, and the customer support is awesome!"</p>
+                <footer>
+                    <p>Kirk Beard</p>
+                </footer>
+            </blockquote>
+        </aside>
+        <section>
+    </main>
+</body>
+</html>

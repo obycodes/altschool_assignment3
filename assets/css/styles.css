@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+body {
+    padding-top: 20px;
+}
+
+/* Top navigation bar styles */
+.top-nav {
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.top-nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    display: inline-block;
+}
+
+.top-nav .nav-menu {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav .nav-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+
+.top-nav .nav-account {
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin-left: 1rem;
+}
+
+.card-container {
+    display: flex;
+    width: 55.75rem;
+    background-color: #fff;
+    margin: 1.5rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    padding: 2rem;
+    width: 66.66%;
+    border-right: 1px solid #ddd;
+}
+
+.pricing-section {
+    width: 33.33%;
+    padding: 2rem;
+    background-color: #1179BF;
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+}
+
+.pricing-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.00063rem;
+}
+
+.pricing-section .price {
+    font-size: 2.5rem;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.00094rem;
+    margin-bottom: 0.25rem;
+}
+
+.pricing-section .renewal-notice {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.pricing-section .benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+}
+
+.pricing-section .upgrade-plan {
+    font-size: 0.9rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.0005rem;
+    margin-bottom: 1rem;
+}
+
+.agency-plan {
+    color: #fff;
+    text-decoration-color: #B9F5FF;
+}
+
+.pricing-section .agency-link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.pricing-section hr {
+    border-color: #fff;
+    margin-bottom: 1rem;
+}
+
+.pricing-section .testimonial {
+    font-style: italic;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: -0.00056rem;
+    font-size: 1.125rem;
+}
+
+.pricing-section .testimonial footer {
+    font-style: normal;
+    text-align: right;
+    margin-top: 0.5rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.circle {
+    background-color: #fff;
+    color: #3498db;
+    border-radius: 50%;
+    padding: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+    border: #3498db solid 2px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container.half {
+    flex: 1;
+}
+
+.input-container.full {
+    flex: 2;
+}
+
+.input-container label {
+    margin-bottom: 0.5rem;
+}
+
+.input-container input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container button {
+    background-color: #2ecc71;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.support-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.support-info .question-mark {
+    display: inline-block;
+    background-color: #fff;
+    color: white;
+    border-radius: 95%;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: #3498db solid 2px;
+}
+
+.stripe-info {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.stripe-info img {
+    vertical-align: middle;
+}
+
+
+@media (max-width: 1024px) {
+    .top-nav .nav-menu {
+        clear: both;
+        float: none;
+        text-align: center;
+    }
+
+    .top-nav .nav-link,
+    .top-nav .nav-account {
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    .card-container {
+        width: auto;
+        flex-direction: column;
+    }
+
+    .form-container,
+    .pricing-section {
+        width: auto;
+        border-right: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-nav {
+        padding: 0.25rem 1rem;
+    }
+
+    .top-nav .logo img {
+        height: auto;
+        width: auto;
+    }
+    .top-nav .nav-menu {
+        padding: 0;
+    }
+
+    .top-nav .nav-link,
+    .top-nav .nav-account {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    body {
+        padding-top: 40px;
+    }
+
+    .card-container {
+        margin-top: 1rem;
+    }
+}
